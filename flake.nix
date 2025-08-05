@@ -22,6 +22,8 @@
       pkgs = nixpkgsFor.${system};
       python = pkgs.python3.withPackages (p: [
         p.jupyterlab
+        p.jupyterlab-lsp
+        p.jupyterlab-execute-time
         p.matplotlib
         p.numpy
         p.scipy
