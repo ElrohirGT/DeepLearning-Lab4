@@ -30,6 +30,8 @@
         p.torchvision
         p.torchsummary
         p.pandas
+        p.datasets
+        p.nltk
       ]);
     in {
       default = pkgs.mkShell {
