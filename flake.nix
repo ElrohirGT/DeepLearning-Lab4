@@ -37,7 +37,11 @@
       ]);
     in {
       default = pkgs.mkShell {
-        packages = [pkgs.black python];
+        packages = [
+          pkgs.black
+          python
+          pkgs.jq
+        ];
       };
     });
   };
